@@ -1,10 +1,27 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-    <a class="navbar-brand" href="#">Recetas Sabrosas</a>
+<nav class="navbar navbar-light navbar-expand-lg" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="#">
+        <img src="../../favicon.ico" width="30" height="30" alt=""></a>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
-                <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" (click)="SelectPage('receta')">Recetas <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" (click)="SelectPage('compra')">Lista de compras</a>
+                </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="dropdown">
+                   <a href="#" class="dropdown-toggle nav-item normal" role="button">Manage</a>
+                    <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">Guardar datos</a>
+                            <a href="" class="dropdown-item">Obtener datos</a>
+                    </div>
+                   
+                </li>
+         
         </ul>
     </div>
 </nav>

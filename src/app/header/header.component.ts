@@ -1,8 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, Output, EventEmitter} from '@angular/core';
 
 @Component({
  selector: 'header-nav',
- templateUrl: './header.component.html'
+ templateUrl: './header.component.html',
+ styleUrls: ['./header.component.css']
 })
 
-export class HeaderComponent {}
+export class HeaderComponent {
+    @Output() onPaging = new EventEmitter<string>();
+
+    SelectPage(page : string){
+        this.onPaging.emit(page);
+    }
+}

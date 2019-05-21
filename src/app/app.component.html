@@ -1,9 +1,9 @@
-<header-nav></header-nav>
+<header-nav (onPaging)="ChangePage($event)"></header-nav>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <recipe-main></recipe-main>
-      <shopping-list></shopping-list>
+      <recipe-main *ngIf="currentPage === 'receta'"></recipe-main>
+      <shopping-list *ngIf="currentPage === 'compra'"></shopping-list>
     </div>
   </div>
 </div>

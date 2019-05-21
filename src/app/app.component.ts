@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  currentPage : string = 'receta';
+  ChangePage(page : string) {
+    this.currentPage = page;
+  }
 }
